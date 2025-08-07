@@ -1,0 +1,23 @@
+#bug {
+    font:green;
+
+}
+
+body{
+    background-color:#081707;
+}
+
+.navigation-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height:7%;
+    background-color:#8aac8b;
+    text-align: left;
+    border:5px solid #081707;
+    border-radius:20px;
+    margin:5px;
+    padding:5px;
+    
+}
