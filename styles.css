@@ -7,6 +7,59 @@ body{
     background-color:#081707;
 }
 
+.button1{
+    background-color:#BAD799;
+    color:#237414;
+    border-radius:10px;
+    position:absolute;
+    height:50%;
+    width:5%;
+    top:15px;
+    left:20px;
+    bottom:20px;
+    border-width:2px;
+    border-color:#237414;
+    font-size:fit-content;
+
+    
+}
+
+.button2{
+    background-color:#BAD799;
+    color:#237414;
+    border-radius:10px;
+    position:absolute;
+    position:right;
+    height:50%;
+    width:5%;
+    top:15px;
+    left:600px;
+    bottom:20px;
+    border-width:2px;
+    border-color:#237414;
+    font-size:fit-content;
+
+    
+}
+
+.button3{
+    background-color:#BAD799;
+    color:#237414;
+    border-radius:10px;
+    position:absolute;
+    position:right;
+    height:50%;
+    width:5%;
+    top:15px;
+    left:900px;
+    bottom:20px;
+    border-width:2px;
+    border-color:#237414;
+    font-size:fit-content;
+
+    
+}
+
 .navigation-bar{
     position: fixed;
     top:0;
