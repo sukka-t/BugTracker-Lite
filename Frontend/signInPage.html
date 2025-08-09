@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BugTracker Lite SignIn</title>
+        <link rel="icon" href="images/bugtracker_pic.png" type="image/png" />
+        <link rel="stylesheet" href="signIn.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="navigation-bar" >
+            <button class="nav-button button1">Home</button>
+            <button class="nav-button button2">Sign In</button>
+            <button class="nav-button button3">Register</button>
+        </div>
+        <div class="sign-in-box">
+            <h1>Sign In:</h1>
+            <div class="enter-username">
+                <p>Username:</p>
+                <input type="text" placeholder="Enter username.." />
+            </div>
+            <div class="enter-pass">
+                <p>Password:</p>
+                <input type="password" placeholder="Enter password.." />
+            </div>
+            <div class="re-enter-pass">
+                <p>Confirm Password:</p>
+                <input type="password" placeholder="Re-enter password.." />
+            </div>
+            <input type="radio" id="user" name="user-type" value="User">
+            <label for="user">User</label><br>
+            <input type="radio" id="admin" name="user-type" value="Admin">
+            <label for="admin">Admin</label><br>
+            <button class="submit-sign-in">Sign In</button>
+        </div>
+    </body>
+</html>

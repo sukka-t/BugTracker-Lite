@@ -27,6 +27,7 @@ body{
     top: 15px;
     left: 50px;
 }
+
 .button2{
     top: 15px;
     right: 210px;
@@ -49,7 +50,6 @@ body{
     border-radius:20px;
     margin:5px;
     padding:5px;
-    
 }
 
 .Home{
@@ -62,7 +62,7 @@ body{
       align-items: center;
       gap: 50px;
       padding: 20px 0px;
-      max-width: 1000px;
+      max-width: 1400px;
     }
 
 .Home img {
@@ -84,6 +84,6 @@ body{
       font-size: 18px;
       line-height: 1.6;
       margin: 0;
-      max-width: 600px;
+      max-width: none;
       color: #BAD799;
     }
