@@ -57,3 +57,28 @@ body{
     margin-bottom: 5px;
     font-family: 'Darker Grotesque', sans-serif;
 }
+
+.direct-to-register p {
+    position: fixed;
+    font-family: 'Bricolage Grotesque';
+    font-size: 52px;
+    color: #bad799;
+    left: 57%;
+    top: 25%;
+    text-align: center;
+}
+.register-button {
+    background-color:#237414;
+    color:#f5ffeb;
+    border-radius:25px;
+    position:absolute;
+    left:73%;
+    top: 57%;
+    height:8%;
+    width:12%;
+    border-width:2px;
+    border-color:solid #081707;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+}
