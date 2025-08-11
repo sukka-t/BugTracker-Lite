@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('fonts/BricolageGrotesque-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    background-color:#081707;
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background-color: #8aac8b;
+    border: 5px solid #081707;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+button {
+    background-color: #BAD799;
+    color: #237414;
+    font-weight: bold;
+    padding: 24px 60px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+/* Container for both sections */
+.sign-in-container {
+    display: flex;
+    justify-content: center; /* center horizontally on page */
+    align-items: flex-start; /* align at top */
+    gap: 60px; /* space between left and right sections */
+    margin-top: 120px; /* push down below navbar */
+    flex-wrap: wrap; /* stack on small screens */
+}
+
+/* Left box */
+.sign-in-box {
+    background-color: #bad799;
+    border: 5px solid #081707;
+    border-radius: 30px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 350px;
+}
+
+/* Right text & button */
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 300px;
+}
+
+.register-box h2 {
+    color: #c9e6b8;
+    font-size: clamp(24px, 4vw, 36px);
+    font-family: 'Bricolage Grotesque';
+    text-align: center;
+}
+
+.register-box button {
+    background-color: #237414;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.register-box button:hover {
+    background-color: #1b5d10;
+}
