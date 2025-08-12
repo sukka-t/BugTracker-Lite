@@ -28,7 +28,7 @@
     padding: 0 2rem;
     height: 60%;
     border: 2px solid #237414;
-    font-family: 'Darker Grotesque', sans-serif;
+    font-family: 'Bricolage Grotesque';
     font-weight: bold;
     font-size: clamp(16px, 1.5vw, 24px);
     cursor: pointer;
@@ -61,7 +61,6 @@ body {
     font-family:'Bricolage Grotesque';
     margin: 0;
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,76 +68,57 @@ body {
     box-sizing: border-box;
 }
 
-.register-box {
-    position: relative;
-    width: min(90%, 577px); 
-    background-color: #bad799;
-    text-align: left;
-    border: 5px solid #4d7a3b;
-    border-radius: 30px;
-    padding: clamp(10px, 2vw, 20px);
-    box-sizing: border-box;
-
-    /* Center in page dynamically */
-    margin: 5vh auto; /* vertical and horizontal centering */
+.register-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0.1vh;
 }
 
-.register-box h1 {
-    font-family: 'Bricolage Grotesque';
-    font-size: clamp(28px, 5vw, 52px);
-    color: #237414;
+/* Heading */
+.register-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #C2E09E;
     text-align: center;
-    margin-bottom: clamp(10px, 2vw, 20px);
+}
+
+/* The black register box */
+.register-box {
+    background-color: #0b1708;
+    padding: 3vh 3vw;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    width: min(60%, 500px); /* Responsive width */
 }
 
 /* Labels */
-.register-box p {
-    font-family: 'Darker Grotesque', sans-serif;
+.register-box label {
     font-weight: bold;
-    font-size: clamp(14px, 2vw, 16px);
-    color: #237414;
-    margin: 0.5em 0 0.2em;
-    align-self: flex-start;
+    color: #4CAF50;
+    font-size: 1.2rem;
 }
 
 /* Inputs */
-.register-box input[type="text"],
-.register-box input[type="password"],
-.register-box input[type="email"] {
-    width: 100%;
-    padding: clamp(6px, 1.2vw, 10px);
-    border: 2px solid #237414;
-    border-radius: 8px;
-    margin-bottom: clamp(5px, 1vw, 10px);
-    font-family: 'Darker Grotesque', sans-serif;
-    font-size: clamp(14px, 2vw, 16px);
-    box-sizing: border-box;
+.register-box input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #f0ffe0;
 }
 
-/* Radio buttons */
-.register-box input[type="radio"] {
-    transform: scale(1.5); /* increase size */
-    accent-color: #237414; /* change color */
-    margin-right: 8px;
-}
-
-/* Submit button */
-.register-box button {
-    background-color: #56a64a;
-    color: black;
-    font-weight: bold;
-    border: 3px solid #237414;
-    border-radius: 20px;
-    padding: clamp(8px, 1.5vw, 12px) clamp(16px, 3vw, 24px);
-    font-size: clamp(14px, 2vw, 18px);
-    cursor: pointer;
-    margin-top: clamp(10px, 2vw, 20px);
+/* Button */
+.register-btn {
     align-self: flex-end;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #6fbe44;
+    border-radius: 2rem;
+    border: 3px solid #d8f5c0;
+    cursor: pointer;
 }
 
-.register-box button:hover {
-    background-color: #4d9140;
-}
