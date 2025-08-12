@@ -23,33 +23,42 @@ body{
     font-size:24px;
 }
 
-.button1 {
-    top: 15px;
-    left: 50px;
-}
-
-.button2{
-    top: 15px;
-    right: 210px;
-}
-
-.button3{
-    top: 15px;
-    right: 50px;
-}
-
-.navigation-bar{
+.navigation-bar {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    height:10%;
-    background-color:#8aac8b;
-    text-align: left;
-    border:5px solid #081707;
-    border-radius:20px;
-    margin:5px;
-    padding:5px;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background-color: #8aac8b;
+    border: 5px solid #081707;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;          
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px; 
+}
+
+button {
+    background-color: #BAD799;
+    color: #237414;
+    font-weight: bold;
+    padding: 24px 60px;
+    border: 1px solid darkgreen;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: #000000;
 }
 
 .Home{
