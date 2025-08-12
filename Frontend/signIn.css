@@ -42,6 +42,14 @@ body{
     margin-left: auto;
     display: flex;
     gap: 1rem;
+    justify-content: space-between; 
+    align-items: center;          
+}
+
+.left-buttons,
+.right-buttons {
+    display: flex;
+    gap: 10px; 
 }
 
 button {
