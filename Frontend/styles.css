@@ -9,20 +9,6 @@ body{
     background-color:#081707;
 }
 
-.nav-button{
-    background-color:#BAD799;
-    color:#237414;
-    border-radius:20px;
-    position:absolute;
-    height:60%;
-    width:10%;
-    border-width:2px;
-    border-color:#237414;
-    font-family: 'Darker Grotesque', sans-serif;
-    font-weight: bold;
-    font-size:24px;
-}
-
 .navigation-bar {
     position: fixed;
     top: 0;
@@ -36,14 +22,26 @@ body{
     padding: 5px;
 
     display: flex;
-    justify-content: space-between; 
-    align-items: center;          
+    align-items: center;
 }
 
-.left-buttons,
+.nav-button {
+    background-color: #BAD799;
+    color: #237414;
+    border-radius: 20px;
+    padding: 0 2rem;
+    height: 60%;
+    border: 2px solid #237414;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 24px);
+    cursor: pointer;
+}
+
 .right-buttons {
+    margin-left: auto;
     display: flex;
-    gap: 10px; 
+    gap: 1rem;
 }
 
 button {
@@ -51,7 +49,7 @@ button {
     color: #237414;
     font-weight: bold;
     padding: 24px 60px;
-    border: 1px solid darkgreen;
+    border: 1px solid #237414;
     border-radius: 20px;
     cursor: pointer;
     font-size: 28px;
