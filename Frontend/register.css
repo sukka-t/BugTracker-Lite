@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Bricolage Grotesque';
+    src: url('fonts/BricolageGrotesque-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navigation-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10%;
+    background-color: #8aac8b;
+    border: 5px solid #4d7a3b;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-button {
+    background-color: #BAD799;
+    color: #237414;
+    border-radius: 20px;
+    padding: 0 2rem;
+    height: 60%;
+    border: 2px solid #237414;
+    font-family: 'Bricolage Grotesque';
+    font-weight: bold;
+    font-size: clamp(16px, 1.5vw, 24px);
+    cursor: pointer;
+}
+
+.right-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+
+button {
+    background-color: #BAD799;
+    color: #237414;
+    font-weight: bold;
+    padding: 24px 60px;
+    border: 1px solid #237414;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+body {
+    background-color: #4d7a3b;
+    font-family:'Bricolage Grotesque';
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.1vh;
+}
+
+/* Heading */
+.register-container h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #C2E09E;
+    text-align: center;
+}
+
+/* The black register box */
+.register-box {
+    background-color: #0b1708;
+    padding: 3vh 3vw;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    width: min(60%, 500px); /* Responsive width */
+}
+
+/* Labels */
+.register-box label {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Inputs */
+.register-box input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #f0ffe0;
+}
+
+/* Button */
+.register-btn {
+    align-self: flex-end;
+    padding: 0.8rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #6fbe44;
+    border-radius: 2rem;
+    border: 3px solid #d8f5c0;
+    cursor: pointer;
+}
