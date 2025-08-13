@@ -19,13 +19,16 @@ body{
     border: 5px solid #081707;
     border-radius: 20px;
     margin: 5px;
-    padding: 5px;
-
+    padding: 0.5em 2%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
-.nav-button {
+/* .nav-button {
     background-color: #BAD799;
     color: #237414;
     border-radius: 20px;
@@ -36,12 +39,16 @@ body{
     font-weight: bold;
     font-size: clamp(16px, 1.5vw, 24px);
     cursor: pointer;
-}
+} */
 
-.right-buttons {
+/* .right-buttons {
     margin-left: auto;
     display: flex;
     gap: 1rem;
+} */
+.right-button {
+    display: flex;
+    
 }
 
 button {
@@ -53,7 +60,11 @@ button {
     border-radius: 20px;
     cursor: pointer;
     font-size: 28px;
+    padding: 0.5em 1.2em;
+    height: auto;
+    box-sizing: border-box;
 }
+
 
 button:hover {
     background-color: #000000;
@@ -61,22 +72,25 @@ button:hover {
 
 .Home{
       font-family: 'Darker Grotesque',sans-serif;
-      position: fixed;
-      top: 50%;
-      left: 40%;
-      transform: translate(-50%, -50%);
+      /* position: fixed; */
+      /* top: 50%; */
+      /* left: 40%; */
+      /* transform: translate(-50%, -50%); */
       display: flex;
+      flex-wrap: wrap;
       align-items: center;
-      gap: 50px;
-      padding: 20px 0px;
+      justify-content: center;
+      gap: 3vw;
+      padding: 2rem;
       max-width: 1400px;
+      margin: 0 auto;
     }
 
 .Home img {
-      left: 10%;
-      width: 250px;
+      max-width: 250;      
+      left: 100%;
       height: auto;
-    }
+}
 
     .text h1 {
       font-family: 'Bricolage Grotesque';
