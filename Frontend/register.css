@@ -12,45 +12,32 @@
     right: 0;
     height: 10%;
     background-color: #8aac8b;
-    border: 5px solid #4d7a3b;
+    border: 5px solid #081707;
     border-radius: 20px;
     margin: 5px;
-    padding: 5px;
-
+    padding: 0.5em 2%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    min-height: 60px;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
 }
-
-.nav-button {
-    background-color: #BAD799;
-    color: #237414;
-    border-radius: 20px;
-    padding: 0 2rem;
-    height: 60%;
-    border: 2px solid #237414;
-    font-family: 'Bricolage Grotesque';
-    font-weight: bold;
-    font-size: clamp(16px, 1.5vw, 24px);
-    cursor: pointer;
-}
-
-.right-buttons {
-    margin-left: auto;
-    display: flex;
-    gap: 1rem;
-}
-
 
 button {
     background-color: #BAD799;
     color: #237414;
     font-weight: bold;
-    padding: 24px 60px;
+    padding: 12px 48px;
     border: 1px solid #237414;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 18px;
+    padding: 0.5em 1.2em;
+    height: auto;
+    box-sizing: border-box;
 }
+
 
 button:hover {
     background-color: #000000;
