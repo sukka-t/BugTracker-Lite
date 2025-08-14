@@ -1,0 +1,8 @@
+node
+express
+pg
+bcryptjs
+jsonwebtoken
+dotenv
+cors
+bcrypt
