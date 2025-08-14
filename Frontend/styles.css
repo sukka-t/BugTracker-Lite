@@ -100,8 +100,8 @@ button:hover {
 }
 
 .footer-box {
-    background-color: #0d1c0f;
-    color: #d8ffd8;
+    background-color: #273a26;
+    color: #8aac8b;
     text-align: center;
     padding: 15px 0;
     width: 100%;
@@ -111,9 +111,12 @@ button:hover {
     font-family:'Bricolage Grotesque';
     margin: 0;
     justify-content: center;
-    padding: 20px;
+    padding: 0.5vh;
     box-sizing: border-box;
     flex:1;
+}
+.footer-box a {
+    color: #8aac8b;
 }
 
 @media (max-width: 768px) {
@@ -121,20 +124,23 @@ button:hover {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 3vh 3vw;
+        padding: 1vh 3vw;
         margin-top: 15vh;
-        gap: 3vh;
+        gap: 1vh;
     }
 
     .Home img{
-        width: 50%;
+        width: 60%;
         max-width: 200px;
         margin-bottom: 2vh;
-        padding-top: 5vh;
+        padding-top: 7vh;
     }
 
     .text {
         max-width: 90%;
         padding-top: 1vh;
+    }
+    .footer-box {
+        font-size: 2vh;
     }
 }
