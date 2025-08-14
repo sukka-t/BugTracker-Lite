@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+body {
+    background-color: #4d7a3b;
+    margin:0;
+    padding:0;
+}
+
 .navigation-bar {
     position: fixed;
     top: 0;
@@ -12,7 +18,7 @@
     right: 0;
     height: 10%;
     background-color: #8aac8b;
-    border: 5px solid #081707;
+    border: 5px solid #4d7a3b;
     border-radius: 20px;
     margin: 5px;
     padding: 0.5em 2%;
@@ -43,34 +49,29 @@ button:hover {
     background-color: #000000;
 }
 
-body {
-    background-color: #4d7a3b;
-    font-family:'Bricolage Grotesque';
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
 .register-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0.1vh;
+    margin-top: 2vh;
+    font-family:'Bricolage Grotesque';
+    margin: 0;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 100px;
 }
 
-/* Heading */
 .register-container h1 {
     font-size: 3rem;
     font-weight: bold;
     color: #C2E09E;
     text-align: center;
+    margin-top: 1vh;
+    height: auto;
 }
 
-/* The black register box */
 .register-box {
     background-color: #0b1708;
     padding: 3vh 3vw;
@@ -78,26 +79,27 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.5vh;
-    width: min(60%, 500px); /* Responsive width */
+    width: min(60%, 500px);
 }
 
-/* Labels */
 .register-box label {
     font-weight: bold;
     color: #4CAF50;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
-/* Inputs */
 .register-box input {
     padding: 0.8rem;
-    font-size: 1rem;
+    font-size: 0.5rem;
     border-radius: 0.5rem;
     border: none;
     background-color: #f0ffe0;
+    padding-right:20px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
-/* Button */
 .register-btn {
     align-self: flex-end;
     padding: 0.8rem 2rem;
@@ -107,4 +109,20 @@ body {
     border-radius: 2rem;
     border: 3px solid #d8f5c0;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.register-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .register-container h1{
+        font-size: 2rem;
+    }
+
+    .register-box{
+        width:40%;
+       
+    }
 }
