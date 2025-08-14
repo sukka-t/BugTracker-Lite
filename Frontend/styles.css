@@ -4,6 +4,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Darker Grotesque';
+    src: url('fonts/DarkerGrotesqueFont.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body{
     background-color:#081707;
@@ -29,6 +35,7 @@ body{
 }
 
 button {
+    font-family: 'Darker Grotesque';
     background-color: #BAD799;
     color: #237414;
     font-weight: bold;
@@ -48,28 +55,21 @@ button:hover {
 }
 
 .Home{
-      font-family: 'Bricolage Grotesque';
-      position: fixed;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      /* gap: 3vw; */
-      /* padding: 2rem; */
-      max-width: 1400px;
-      margin: 0 auto;
-      top:30%;
+    font-family: 'Bricolage Grotesque';
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 15vh auto 5vh auto;
     padding: 5vh 5vw;
     gap: 5vw;
     box-sizing: border-box;
     }
 
 .Home img {
-      /* max-width: 250;       */
-      left: 100%;
-      height: auto;
-      /* max-width: 200px; */
-    width: 25%;
+    height: auto;
+    width: clamp(200px, 25%, 300px);
     flex: 1 1 200px;
     max-width: min(300px, 40vw);
 }
@@ -80,25 +80,19 @@ button:hover {
 }
 
 .text h1 {
-      font-family: 'Bricolage Grotesque';
-      color: #6dbe47;
-      /* margin: 0 0 20px; */
-      /* font-size: 2.5rem; */
-    /* margin-bottom: 15px; */
-     font-size: clamp(2rem, 5vw, 3rem);
+    font-family: 'Bricolage Grotesque';
+    color: #6dbe47;
+    font-size: clamp(2rem, 5vw, 3rem);
     font-weight: bold;
     margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 .text p {
-      font-family: 'Darker Grotesque';
-      font-weight: bold;
-      /* font-size: 18px; */
-      /* line-height: 1.6; */
-      margin: 0;
-      max-width: none;
-      color: #BAD799;
-      /* font-size: 1rem; */
+    font-family: 'Darker Grotesque';
+    font-weight: bold;
+    margin: 0;
+    color: #BAD799;
     line-height: 1.5;
     font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
@@ -106,14 +100,20 @@ button:hover {
 @media (max-width: 768px) {
     .Home {
         flex-direction: column;
+        align-items: center;
         text-align: center;
+        padding: 3vh 3vw;
+        margin-top: 15vh;
+        gap: 3vh;
     }
 
     .Home img{
-        width: 40%;
+        width: 50%;
+        max-width: 200px;
+        margin-bottom: 2vh;
     }
 
-    .text h1 {
-        font-size: 2rem;
+    .text {
+        max-width: 90%;
     }
 }
