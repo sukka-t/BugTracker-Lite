@@ -1,11 +1,10 @@
-require("dotenv").config();
+require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
 const pg = require("pg");
 const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
 
 
 const app = express();
