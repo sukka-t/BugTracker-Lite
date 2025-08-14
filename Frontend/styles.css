@@ -72,11 +72,13 @@ button:hover {
     width: clamp(200px, 25%, 300px);
     flex: 1 1 200px;
     max-width: min(300px, 40vw);
+    padding-top: 9vh;
 }
 
 .text{
     flex: 1 1 300px;
     max-width: 600px;
+    padding-top: 17vh;
 }
 
 .text h1 {
@@ -111,9 +113,11 @@ button:hover {
         width: 50%;
         max-width: 200px;
         margin-bottom: 2vh;
+        padding-top: 5vh;
     }
 
     .text {
         max-width: 90%;
+        padding-top: 1vh;
     }
 }
