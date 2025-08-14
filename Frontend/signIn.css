@@ -19,49 +19,29 @@ body{
     border: 5px solid #081707;
     border-radius: 20px;
     margin: 5px;
-    padding: 5px;
-
+    padding: 0.5em 2%;
     display: flex;
     align-items: center;
-}
-
-.nav-button {
-    background-color: #BAD799;
-    color: #237414;
-    border-radius: 20px;
-    padding: 0 2rem;
-    height: 60%;
-    border: 2px solid #237414;
-    font-family: 'Darker Grotesque', sans-serif;
-    font-weight: bold;
-    font-size: clamp(16px, 1.5vw, 24px);
-    cursor: pointer;
-}
-
-.right-buttons {
-    margin-left: auto;
-    display: flex;
-    gap: 1rem;
-    justify-content: space-between; 
-    align-items: center;          
-}
-
-.left-buttons,
-.right-buttons {
-    display: flex;
-    gap: 10px; 
+    justify-content: space-between;
+    min-height: 60px;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
 }
 
 button {
     background-color: #BAD799;
     color: #237414;
     font-weight: bold;
-    padding: 24px 60px;
-    border: 1px solid darkgreen;
-    border-radius: 20px;
+    padding: 12px 48px;
+    border: 1px solid #237414;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 28px;
+    font-size: 18px;
+    padding: 0.5em 1.2em;
+    height: auto;
+    box-sizing: border-box;
 }
+
 
 button:hover {
     background-color: #000000;
@@ -113,7 +93,7 @@ input[type="text"] , input[type="password"]{
     height: 20px;
     font-size: 18px;
     padding: 10px;
-    background-color: lightgreen;
+    background-color: #f5ffeb;
     border: 2px solid #237414;
     border-radius: 8px;
     margin-bottom: 5px;
@@ -139,10 +119,10 @@ input[type="radio"]:checked {
 
 .sign-in-box button{
     background-color: #6dbe47;
-    color: #a0ec49;
+    color: #f5ffeb;
     font-weight: bold;
     padding: 12px 20px;
-    border: 3px solid #a0ec49;
+    border: 3px solid #d1f5ac;
     border-radius: 20px;
     cursor: pointer;
     font-size: 28px;
