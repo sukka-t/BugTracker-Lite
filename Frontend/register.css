@@ -111,18 +111,14 @@ button:hover {
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
-.register-container{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .register-container h1{
-        font-size: 2rem;
-    }
-
+@media (max-width: 600px) {
     .register-box{
-        width:40%;
-       
+        width: 90%;       /* Take up most of the screen width */
+        padding: 15px;
+    }
+
+    .register-box input,
+    .register-box btn {
+        font-size: 1rem;  /* Slightly smaller font to fit */
     }
 }
