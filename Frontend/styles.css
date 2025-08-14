@@ -97,6 +97,23 @@ button:hover {
     font-size: clamp(0.9rem, 1.2vw, 1rem);
 }
 
+.footer-box {
+    background-color: #0d1c0f;
+    color: #d8ffd8;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family:'Bricolage Grotesque';
+    margin: 0;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex:1;
+}
+
 @media (max-width: 768px) {
     .Home {
         flex-direction: column;
