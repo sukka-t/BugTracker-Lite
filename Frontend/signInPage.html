@@ -3,43 +3,38 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BugTracker Lite SignIn</title>
+        <title>Sign In</title>
         <link rel="icon" href="images/bugtracker_pic.png" type="image/png" />
         <link rel="stylesheet" href="signIn.css" />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-         <div class="navigation-bar">
-        <button>Home</button>
-        <div class="right-button">
-            <button>Sign In</button>
-            <button>Register</button>
+        <div class="navigation-bar">
+            <button>Home</button>
+            <div class="right-button">
+                <button>Sign In</button>
+                <button>Register</button>
+            </div>
         </div>
-    </div>
-     <div class="sign-in-container">
-    <div class="sign-in-box">
-        <h1>Sign In:</h1>
+        <div class="sign-in-container">
+            <div class="sign-in-box">
+                <h1>Sign In:</h1>
+                <label>Username:</label>
+                <input type="text">
+                <label>Password:</label>
+                <input type="password">
 
-        <label>Username:</label>
-        <input type="text">
-
-        <label>Password:</label>
-        <input type="password">
-
-        <div class="radio-group">
-            <label><input type="radio" name="role" checked> as User</label> <br>
-            <label><input type="radio" name="role"> as Admin</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="role" checked> as User</label> <br>
+                    <label><input type="radio" name="role"> as Admin</label>
+                </div>
+                <button>Sign In</button>
+            </div>
+            <!-- Right column -->
+            <div class="register-box">
+                <h2>Don’t have an account?</h2>
+                <button>Register</button>
+            </div>
         </div>
-
-        <button>Sign In</button>
-    </div>
-
-    <!-- Right column -->
-    <div class="register-box">
-        <h2>Don’t have an account?</h2>
-        <button>Register</button>
-    </div>
-</div>
-
     </body>
 </html>

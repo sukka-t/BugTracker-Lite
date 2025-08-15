@@ -151,7 +151,7 @@ input[type="radio"]:checked {
     background-color: #237414;
     color: white;
     font-weight: bold;
-    padding: 20px 28px;
+    padding: 15px 28px;
     font-size: 26px;
     border: none;
     border-radius: 25px;
@@ -160,4 +160,16 @@ input[type="radio"]:checked {
 
 .register-box button:hover {
     background-color: #1b5d10;
+}
+
+@media (max-width: 768px) {
+    .register-box h2 {
+        font-size: 7vh;
+    }
+    /* .register-box button {
+
+    }
+    .sign-in-box {
+        padding-top: 1vh;
+    } */
 }
