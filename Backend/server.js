@@ -23,11 +23,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '..', 'Frontend')));
 
 //Test Routes
-app.get('/', (req,res) => {
+app.get('/test', (req,res) => {
   res.sendFile(path.join(__dirname, '..', 'Frontend', 'test'));
 })
 app.get('/', (req,res) => {
-  res.render('test');
+  res.render('test.ejs');
 })
 
 //Routes
