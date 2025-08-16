@@ -114,6 +114,8 @@ button:hover {
     padding: 0.5vh;
     box-sizing: border-box;
     flex:1;
+    position: fixed;
+    bottom: 0;
 }
 .footer-box a {
     color: #8aac8b;
