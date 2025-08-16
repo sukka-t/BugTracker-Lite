@@ -1,36 +1,46 @@
 require('dotenv').config({ path: require('path').resolve(__dirname, '../.env') });
 const express = require("express");
+const path = require('path');
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
 const pg = require("pg");
 const jwt = require("jsonwebtoken");
 
-
+//Port Setting
 const app = express();
 const port = process.env.PORT || 7000
+
+//Setting view folder
+app.set('views', path.join(__dirname, '..', 'Frontend'));
+
+//View Engine
+app.set('view engine', 'ejs');
+
 
 // ✅ Middleware
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-//Get users
-app.get('/users',(req,res) => {
-  res.render(users);
-});
-
-// app.get("/users/register",(req,res) => {
-//   req.render("register");
-// });
-app.get("/users/login",(req,res) => {
-  req.render("login");
-});
-// app.get("/users/dashboard",(req,res) => {
-//   req.render("dashboard");
-// });
+app.use(express.static(path.join(__dirname, '..', 'Frontend')));
 
 
+//Routes
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, '..', 'Frontend', 'index.html'));
+})
+app.get('/register', (req,res) => {
+  res.sendFile(path.join(__dirname, '..', 'Frontend', 'registerPage.html'));
+})
+app.get('/login', (req,res) => {
+  res.sendFile(path.join(__dirname, '..', 'Frontend', 'signInPage.html'));
+})
+app.get('/home', (req,res) => {
+  res.sendFile(path.join(__dirname, '..', 'Frontend', 'userPage.html'));
+})
+
+
+//DB connection
 const pool = new pg.Pool({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
@@ -38,7 +48,6 @@ const pool = new pg.Pool({
     port: process.env.DB_POST,
     database: process.env.DB_NAME
 });
-
 app.get('/', async (req, res) => {
     try {
         const result = await pool.query('SELECT NOW()');
@@ -49,6 +58,7 @@ app.get('/', async (req, res) => {
     }
 });
 
+//Display messages
 app.listen(port, () => {
     console.log(`Server Launched!`);
     console.log(`Server running on port ${port}`);
