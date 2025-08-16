@@ -11,11 +11,9 @@ const jwt = require("jsonwebtoken");
 const app = express();
 const port = process.env.PORT || 7000
 
-//Setting view folder
+//Setting EJS
 app.set('views', path.join(__dirname, '..', 'Frontend'));
-
-//View Engine
-app.set('view engine', 'ejs');
+app.set('view engine', 'ejs'); //View Engine
 
 
 // ✅ Middleware
@@ -24,9 +22,16 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '..', 'Frontend')));
 
+//Test Routes
+app.get('/', (req,res) => {
+  res.sendFile(path.join(__dirname, '..', 'Frontend', 'test'));
+})
+app.get('/', (req,res) => {
+  res.render('test');
+})
 
 //Routes
-app.get('/', (req,res) => {
+app.get('/home', (req,res) => {
   res.sendFile(path.join(__dirname, '..', 'Frontend', 'index.html'));
 })
 app.get('/register', (req,res) => {
@@ -35,7 +40,7 @@ app.get('/register', (req,res) => {
 app.get('/login', (req,res) => {
   res.sendFile(path.join(__dirname, '..', 'Frontend', 'signInPage.html'));
 })
-app.get('/home', (req,res) => {
+app.get('/user', (req,res) => {
   res.sendFile(path.join(__dirname, '..', 'Frontend', 'userPage.html'));
 })
 
