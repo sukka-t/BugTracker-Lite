@@ -9,18 +9,54 @@
 </head>
 <body>
       <div class="container">
-    <div class="left-section">
-      <h2 class="text">Hello , Name !</h2>
-      <div class="report-box">
-        <h3> Your reports : </h3>
-
-      </div>
-    </div>
-    <div class="right-section">
-      <div class="form-box">
-
-      </div>
+  <div class="left">
+    <h1>Hello, Name!</h1>
+    <div class="reports-box">
+      <div class="reports-title">Your reports:</div>
+      <table>
+        <thead>
+          <tr>
+            <th>Report Title</th>
+            <th>Status</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Refund button is not working</td>
+            <td>Left to review</td>
+            <td>05/08/25</td>
+          </tr>
+          <tr>
+            <td>It takes a long time for images to load on Product page blah blah blah bleh bleh bleh blu blu blu hup blu lublu</td>
+            <td>In progress</td>
+            <td>02/08/25</td>
+          </tr>
+          <tr>
+            <td>I can’t log in</td>
+            <td>Close</td>
+            <td>20/07/25</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
+  <div class="right">
+    <h2>Form</h2>
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title">
+
+    <label for="description">Bug Description:</label>
+    <textarea id="description" name="description"></textarea>
+
+    <div class="severity">Severity:</div>
+    <label><input type="radio" name="severity" value="Low"> Low</label>
+    <label><input type="radio" name="severity" value="Medium"> Medium</label>
+    <label><input type="radio" name="severity" value="High"> High</label>
+    <label><input type="radio" name="severity" value="Critical"> Critical</label>
+
+    <button class="submit-btn">Submit</button>
+  </div>
+</div>
 </body>
 </html>
