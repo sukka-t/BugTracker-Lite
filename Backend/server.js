@@ -23,11 +23,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '..', 'Frontend')));
 
 //Test Routes
-app.get('/test', (req,res) => {
-  res.sendFile(path.join(__dirname, '..', 'Frontend', 'test'));
+// app.get('/test', (req,res) => {
+//   res.sendFile(path.join(__dirname, '..', 'Frontend', 'test'));
+// })
+app.get('/testr', (req,res) => {
+  res.render('Test_Reg.ejs');
 })
-app.get('/', (req,res) => {
-  res.render('test.ejs');
+app.get('/testl', (req,res) => {
+  res.render('Test_Log.ejs');
 })
 
 //Routes
