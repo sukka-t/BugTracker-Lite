@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "BugTracker-Lite-main",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BugTracker-Lite-main"
+	}
+}

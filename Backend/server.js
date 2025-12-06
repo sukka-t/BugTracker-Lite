@@ -47,6 +47,24 @@ app.get('/user', (req,res) => {
   res.sendFile(path.join(__dirname, '..', 'Frontend', 'userPage.html'));
 })
 
+//POST routes
+app.post('/testr', async (req, res) => {
+  try {
+    const hashedPassword = await bcrypt.hash(req.body.password,10);
+    users.push({
+      id:Date.now().toString(),
+      name:req.body.name,
+      email:req.body.email,
+      password: hashedPassword
+    })
+    res.redirect('/testl')
+  }
+  catch{
+    res.redirect('/testr')
+  }
+  console.log(users);
+})
+
 
 //DB connection
 const pool = new pg.Pool({
